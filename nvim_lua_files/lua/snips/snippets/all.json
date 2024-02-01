@@ -1,0 +1,6 @@
+{
+  "hello-world": {
+    "prefix": "hello-world",
+    "body": ["Hello World $1"]
+  }
+}

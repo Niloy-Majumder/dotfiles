@@ -1,0 +1,20 @@
+{
+  "thencatch": {
+    "prefix": "thencatch",
+    "body": ["then((data) => {}).catch((err) => {});", ""]
+  },
+  "svctemplate": {
+    "prefix": "svctemplate",
+    "body": [
+      "(data) => {",
+      "  return new Promise(async (resolve, reject) => {",
+      "    try {",
+      "    } catch (error) {",
+      "      reject(error.message);",
+      "    }",
+      "  });",
+      "};",
+      ""
+    ]
+  }
+}

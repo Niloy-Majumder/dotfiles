@@ -3,7 +3,9 @@ local null_ls = require("null-ls")
 
 local opts = {
   sources = {
-    null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.diagnostics.eslint.with({
+      only_local = "node_modules/.bin"
+    }),
     null_ls.builtins.formatting.prettier,
     null_ls.builtins.formatting.prettier.with({
         extra_args = { "--print-width", "120" },
