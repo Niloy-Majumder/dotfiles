@@ -13,3 +13,14 @@ lspconfig.tsserver.setup {
     }
   }
 }
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"python"},
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
+    }
+  }
+}

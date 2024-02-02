@@ -6,10 +6,12 @@ local opts = {
     null_ls.builtins.diagnostics.eslint.with({
       only_local = "node_modules/.bin"
     }),
-    null_ls.builtins.formatting.prettier,
+    -- null_ls.builtins.formatting.prettier,
     null_ls.builtins.formatting.prettier.with({
         extra_args = { "--print-width", "120" },
     }),
+    null_ls.builtins.formatting.black,
+    null_ls.builtins.diagnostics.flake8,
   },
   on_attach = function (client, bufnr)
     if client.supports_method("textDocument/formatting") then
