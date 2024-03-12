@@ -52,10 +52,14 @@ M.general = {
       end,
       "LSP formatting",
     },
+
+    ['<leader>k'] = {"<cmd> m-2 <CR>", "Move Line Up"},
+    ['<leader>j'] = {"<cmd> m+1 <CR>", "Move Line Down"},
   },
 
   t = {
     ["<C-x>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
+    -- ["<<leader>x>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Close terminal" },
   },
 
   v = {

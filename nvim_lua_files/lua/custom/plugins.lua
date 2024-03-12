@@ -36,7 +36,7 @@ local plugins = {
     config = function ()
       require("gitblame").setup({
         -- Configuration here, or leave empty to use defaults
-        -- message_when_not_committed = 'Oh please, commit this !'
+        -- message_when_not_committed = 'Oh please, commit this '
       })
     end
   },

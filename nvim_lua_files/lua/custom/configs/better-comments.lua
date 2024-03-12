@@ -9,7 +9,7 @@ local tags = {
     virtual_text = "",
   },
   {
-    name = "*",
+    name = "* ",
     fg = "#98C379",
     bg = "",
     bold = false,
@@ -29,6 +29,13 @@ local tags = {
     bold = true,
     virtual_text = "",
   },
+  {
+    name = "!",
+    fg = "#f44747",
+    bg = "",
+    bold = true,
+    virtual_text = "",
+  }
 
 }
 
